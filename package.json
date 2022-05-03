@@ -1,0 +1,41 @@
+{
+  "name": "voodoo-code-challenge-ddd",
+  "version": "1.0.0",
+  "description": "Voodoo Code Challenge using DDD",
+  "main": "index.js",
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node apps/backend/index.js",
+    "build": "docker build -t voodoo-code-challenge-ddd ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmatovoodoo/voodoo-code-challenge-ddd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmatovoodoo/voodoo-code-challenge-ddd/issues"
+  },
+  "homepage": "https://github.com/jmatovoodoo/voodoo-code-challenge-ddd#readme",
+  "dependencies": {
+    "fastify": "3.29.0",
+    "pino": "7.11.0"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-security": "1.5.0"
+  }
+}
