@@ -1,0 +1,19 @@
+# general
+debug*
+*node_modules
+*.env
+.DS_Store
+
+# certificates extensions
+*.key
+*.pem
+*.srl
+*.crt
+*.csr
+*.csr.cnf
+*.ext
+*.dec
+
+# vscode
+.vscode/
+.clinic/

@@ -1,5 +1,6 @@
 'use strict';
 
+require('dotenv').config();
 const logger = require('pino')();
 const webServer = require('./web');
 
