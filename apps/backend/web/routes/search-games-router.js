@@ -3,7 +3,7 @@
 function generateRoute(controller) {
   const router = {
     method: 'GET',
-    url: '/status',
+    url: '/api/games/search',
     handler: controller.invoke,
   };
 

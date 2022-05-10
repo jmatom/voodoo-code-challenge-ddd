@@ -9,7 +9,10 @@ async function start(container) {
   const logger = container['service.logger'];
 
   return new Promise((resolve) => {
-    fastify.route(routes.healthcheck.getStatus);
+    // fastify.route(routes.healthcheck.getStatus);
+    fastify.route(routes.createHealthCheckRouter(container['app.backend.controllers'].healthcheck.getStatus));
+    fastify.route(routes.createSearchGamesRouter(container['app.backend.controllers'].games.searchGamesGetController));
+    fastify.route(routes.createAddGameRouter(container['app.backend.controllers'].games.addGamePostController));
 
     fastify.listen(port, '0.0.0.0', (err) => {
       if (err) {

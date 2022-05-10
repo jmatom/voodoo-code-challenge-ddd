@@ -1,0 +1,23 @@
+asyncapi: 2.4.0
+info:
+  title: Game Service
+  version: 1.0.0
+  description: This service is in charge of games manipulation
+channels:
+  voodoo.game.1.event.game.created:
+    subscribe:
+      message:
+        $ref: '#/components/messages/CreatedGameDomainEvent'
+components:
+  messages:
+    CreatedGameDomainEvent:
+      payload:
+        type: object
+        properties:
+          name:
+            type: string
+            description: Name of the app
+          platform:
+            type: string
+            description: Application platform (android, ios)
+

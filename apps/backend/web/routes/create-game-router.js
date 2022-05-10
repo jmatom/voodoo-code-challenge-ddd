@@ -2,8 +2,8 @@
 
 function generateRoute(controller) {
   const router = {
-    method: 'GET',
-    url: '/status',
+    method: 'POST',
+    url: '/api/games',
     handler: controller.invoke,
   };
 

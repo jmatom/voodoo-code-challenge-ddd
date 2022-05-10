@@ -1,9 +1,11 @@
 'use strict';
 
-const getStatus = require('./health-check');
+const createAddGameRouter = require('./create-game-router');
+const createSearchGamesRouter = require('./search-games-router');
+const createHealthCheckRouter = require('./health-check');
 
 module.exports = {
-  healthcheck: {
-    getStatus,
-  },
+  createHealthCheckRouter,
+  createAddGameRouter,
+  createSearchGamesRouter,
 };
